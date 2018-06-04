@@ -4,3 +4,21 @@
 [submodule "usr/local/scripts/sysgit"]
 	path = usr/local/scripts/sysgit
 	url = https://github.com/simonwalz/sysgit.git
+[submodule "usr/local/scripts/script-git-find-repos"]
+	path = usr/local/scripts/script-git-find-repos
+	url = https://github.com/simonwalz/script-git-find-repos.git
+[submodule "usr/local/scripts/script-git-backup"]
+	path = usr/local/scripts/script-git-backup
+	url = https://github.com/simonwalz/script-git-backup.git
+[submodule "usr/local/scripts/git2"]
+	path = usr/local/scripts/git2
+	url = https://github.com/simonwalz/git2.git
+[submodule "usr/local/scripts/screen-save"]
+	path = usr/local/scripts/screen-save
+	url = https://github.com/simonwalz/screen-save.git
+[submodule "usr/local/scripts/exifrename"]
+	path = usr/local/scripts/exifrename
+	url = https://github.com/simonwalz/exifrename.git
+[submodule "usr/local/scripts/script-screen-find-ssh-agent"]
+	path = usr/local/scripts/script-screen-find-ssh-agent
+	url = https://github.com/simonwalz/script-screen-find-ssh-agent.git
