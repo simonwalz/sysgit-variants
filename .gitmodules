@@ -1,0 +1,3 @@
+[submodule "usr/local/scripts/script-link-script-paths"]
+	path = usr/local/scripts/script-link-script-paths
+	url = https://github.com/simonwalz/script-link-script-paths.git
