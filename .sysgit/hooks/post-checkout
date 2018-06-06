@@ -1,0 +1,36 @@
+#!/bin/bash
+
+ORIG_HEAD="$1"
+HEAD="$2"
+BRANCH_CHECKOUT="$3"
+ACTION="$4"
+
+# ignore file checkouts:
+if test "x${BRANCH_CHECKOUT}" = "x0"
+then
+	exit
+fi
+
+# display hook name:
+if test "x$4" = ""
+then
+	ACTION="checkout"
+fi
+echo "HOOK: Post ${ACTION}"
+
+# for each changed file:
+git diff-tree -r -z --name-only --no-commit-id "${ORIG_HEAD}" "${HEAD}" 2>/dev/n | while IFS= read -r -d ''
+do
+	file="${REPLY//\//-}"
+	if test "x$(command -v "changed-${file}")" != "x"
+	then
+		"changed-${file}"
+	elif test -x "/.changed/${file}.sh"
+	then
+		"/.changed/${file}.sh"
+	fi
+done
+
+# run init script
+/.init.sh "${ACTION}"
+
