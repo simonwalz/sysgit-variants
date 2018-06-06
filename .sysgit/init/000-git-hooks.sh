@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if test \! -d "/.hooks/"
+if test \! -d "/.sysgit/hooks/"
 then
 	echo "Directory hooks not found."
 	exit 1
