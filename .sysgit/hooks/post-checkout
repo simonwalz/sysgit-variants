@@ -32,5 +32,5 @@ do
 done
 
 # run init script
-/.init.sh "${ACTION}"
+/.sysgit/init.sh "${ACTION}"
 
