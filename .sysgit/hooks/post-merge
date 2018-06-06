@@ -1,6 +1,4 @@
 #!/bin/bash
 
-echo "HOOK: Post merge"
-
-/.hooks/post-checkout ORIG_HEAD HEAD 1 merge
+/.sysgit/hooks/post-checkout ORIG_HEAD HEAD 1 merge
 
