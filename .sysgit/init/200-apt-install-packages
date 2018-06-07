@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if test "x$1" != "x"
+then
+	# The system is only updating
+	exit 0
+fi
+
+if test \! -f /etc/sysgit/apt-packages
+then
+	exit 0
+fi
+
+apt install -y $(cat /etc/sysgit/apt-packages)
+
