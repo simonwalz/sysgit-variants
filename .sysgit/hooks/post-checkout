@@ -12,7 +12,7 @@ then
 fi
 
 # display hook name:
-if test "x$4" = ""
+if test "x$4" = "x"
 then
 	ACTION="checkout"
 fi
